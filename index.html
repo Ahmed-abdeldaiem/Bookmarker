@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark URL APP</title>
+    <!-- Bootstrap -5.3.2 -->
+    <link rel="stylesheet" href="CSS files/bootstrap.min.css" />
+    <!-- fontawesome-free-6.5.1-web -->
+    <link rel="stylesheet" href="CSS files/all.min.css" />
+    <!-- CSS File -->
+    <link rel="stylesheet" href="CSS files/style.css" />
+    <!-- FONTS  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="position-relative">
+
+    <header class="mb-2">
+      <div class="container py-5">
+        <div class="row justify-content-center align-items-center text-center">
+          <h1 class=" display-3  text-capitalize Pacifico-font p-0 m-0 "><span class="book position-relative">Bookmarker</span></h1>
+  
+        </div>
+      </div>
+  
+    </header>
+    <section class=" ">
+      <div class="container pb-5 pt-3 border-dotted">
+        <div class="row justify-content-center align-items-center text-center">
+          <h2 class="text-capitalize Righteous-font p-0 m-0 "><span><i class="fa-solid fa-bookmark svg-color1 "></i></span> Bookmark your favorite sites <span><i class="fa-solid fa-bookmark svg-color2"></i></span></h2>
+          
+          
+          <form class="row g-3 needs-validation fw-semibold fs-5" novalidate>
+           
+              <label for="siteInput" class="form-label text-start"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+              <input type="text" class="form-control m-0 p-2 border-2" id="siteInput" placeholder="Website Name" required>
+             
+           
+           
+              <label for="urlInput" class="form-label text-start mt-4"><i class="fa-solid fa-link"></i> Site URL</label>
+              <input type="url" class="form-control m-0 p-2 border-2" id="urlInput" placeholder="Website URL" required>
+                       
+           
+           
+            <div class="col-12 mt-4 d-flex justify-content-center">
+              <!-- data-bs-toggle="modal" data-bs-target="#errorModal" -->
+              <button id="submitBtn" class="btn btn-danger ps-5 pe-5 pt-2 pb-2" type="submit" >Submit</button>
+              <button id="updateBtn" class="btn btn-warning ps-5 pe-5 pt-2 pb-2" type="submit" >Update</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+<section class="mt-4">
+  <div class="container">
+    <div class="row text-center">
+      <table class="table bg-light">                                                                                                                                                                                                                                                     
+        <thead>
+          <tr>
+            <th scope="col">Index</th>
+            <th scope="col">Website Name</th>
+            <th scope="col">Visit</th>
+            <th scope="col">Delete</th>
+            <th scope="col">Update</th>
+          </tr>
+        </thead>
+        <tbody>
+         
+          <!-- <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td><button class="btn btn-success"><i class="fa-solid fa-eye"></i> Visit</button></td>
+            <td><button class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+            <td><button class="btn btn-warning"><i class="fa-solid fa-pen"></i> Update</button></td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+</section>
+   
+
+
+<div class="row justify-content-center">
+  <div class="bg-warning rounded-3 p-2 " id="errorModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        
+        <div class="modal-header border-0 align-items-start">
+        
+        <div>  
+          
+          <p class="fs-4 ms-3 mt-3"><i class="fa-solid fa-circle text-success"></i> <i class="fa-solid fa-circle text-info"></i> <i class="fa-solid fa-circle text-danger"></i></p>
+          <h5 class="modal-title fs-4 fw-semibold">Site Name or Url is not valid, Please follow the rules below :</h5>
+        </div>
+          
+          <button type="button" id="closeModal" class="btn-close text-dark fw-bold" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="fs-5 text-nowrap"><i class="fa-regular text-danger fa-circle-right"></i> Site name must contain at least 3 characters</p>
+          <p class="fs-5"><i class="fa-regular text-danger fa-circle-right"></i> Site URL must be a valid one</p>
+        </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+<div class="gray-layer">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- fontawesome-free-6.5.1-web -->
+    <script src="JS files/all.min.js"></script>
+    <!-- Bootstrap -5.3.2 -->
+    <script src="JS files/bootstrap.bundle.min.js"></script>
+    <!-- JS File -->
+    <script src="JS files/crud.js"></script>
+  </body>
+</html>
